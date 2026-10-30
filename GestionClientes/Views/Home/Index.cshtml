@@ -1,0 +1,13 @@
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h4 class="card-title">Bienvenido, @User.Identity.Name</h4>
+        <p class="card-text">
+            Desde aqui puede administrar los clientes del sistema.
+        </p>
+        <a class="btn btn-primary" href="@Url.Action("Index", "Clientes")">Ir a clientes</a>
+    </div>
+</div>
